@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+	<h2>In-Time Digital   -   Secure log in page</h2>
+	<br>
+	<br>
+	<br>
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+		<br>
+		<button>login</button>
+		<br>
+		<br>
+		<br>
+	</form>
+{% endblock %}

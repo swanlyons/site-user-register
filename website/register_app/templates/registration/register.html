@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+	<h1>In-Time Digital    -    create a new account</h1>
+	<h3>Sign up for a new account, start your 30-day free trial today.</h3>
+	<br>
+	<br>
+	<br>
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+		<br>
+		<br>
+		<br>
+		<button>Register</button>
+		<br>
+		<br>
+		<br>
+		<br>
+	</form>
+{% endblock %}
